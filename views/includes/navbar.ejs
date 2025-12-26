@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-md bg-white border-bottom sticky-top py-2">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center text-danger" href="/listings">
+            <i class="fa-regular fa-compass fa-2x me-2"></i>
+            <span class="fw-bold fs-4 ls-tight">Wanderlust</span>
+        </a>
+
+        <div class="navbar-nav ms-auto me-3 d-none d-md-flex">
+            <form class="d-flex search-form" role="search" action="/listings" method="GET">
+                <input class="form-control search-input rounded-pill px-4" type="search" name="q"
+                    placeholder="Search destinations" aria-label="Search">
+                <button class="btn btn-search rounded-pill" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link px-3 fw-medium" href="/listings">Explore</a>
+
+                <% if(!currUser) { %>
+                    <a class="nav-link px-3 fw-medium" href="/signup"><b>Signup</b></a>
+                    <a class="nav-link px-3 fw-medium" href="/login"><b>Login</b></a>
+                    <% } %>
+
+                        <% if(currUser) { %>
+                            <a class="nav-link px-3 fw-medium" href="/listings/watchlist">
+                                <i class="fa-solid fa-heart text-danger"></i> Wishlist
+                            </a>
+
+                            <a class="nav-link px-3 fw-medium" href="/listings/new">Add new listing</a>
+                            <a class="nav-link px-3 fw-medium" href="/logout"><b>Logout</b></a>
+                            <% } %>
+            </div>
+
+            <div class="navbar-nav ms-3 d-none d-lg-flex">
+                <a class="nav-link" href="#"><i class="fa-solid fa-globe"></i></a>
+                <div class="btn btn-outline-secondary rounded-pill ms-2 shadow-sm px-3 d-flex align-items-center">
+                    <i class="fa-solid fa-bars me-2"></i>
+                    <i class="fa-solid fa-circle-user fa-lg"></i>
+                    <% if(currUser) { %>
+                        <span class="ms-2 fw-bold" style="font-size: 0.8rem;">
+                            <%= currUser.username %>
+                        </span>
+                        <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

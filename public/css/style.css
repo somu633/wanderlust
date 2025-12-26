@@ -1,0 +1,301 @@
+/*body {
+    background-color: pink;
+}*/
+
+.nav-link:hover {
+    background-color: #f7f7f7;
+    border-radius: 2rem;
+}
+
+.f-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f-info-socials a:hover {
+    color: #fe424d !important;
+
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline !important;
+}
+
+
+/* card styling start */
+
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+}
+
+.fa-compass {
+    color: #fe424d;
+
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* Index Page Cards */
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+    margin-top: 0.5rem;
+}
+
+.card-text p {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+    color: black;
+}
+
+
+.listing-card:hover .card-img-overlay {
+    background-color: white;
+    opacity: 0.2;
+}
+
+/* Footer Styling */
+
+.f-info {
+    background-color: #f7f7f7 !important;
+    height: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+/* add buttom */
+
+.add-btn {
+    background-color: #fe424d !important;
+
+    border: none !important;
+    padding: 0.5rem 1.5rem !important;
+}
+
+.add-btn:hover {
+    background-color: #d93b45 !important;
+}
+
+
+/* edit button */
+
+.edit-btn {
+    background-color: #fe424d !important;
+
+    border: none !important;
+    padding: 8px 20px !important;
+}
+
+.edit-btn:hover {
+    background-color: #e31c5f !important;
+}
+
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-control:focus {
+    border-color: #fe424d;
+    box-shadow: 0 0 0 0.25rem rgba(254, 66, 77, 0.25);
+}
+
+/* show part */
+
+.show-card {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    border: none !important;
+}
+
+.show-img {
+    height: 30vh;
+    border-radius: 1.5rem !important;
+
+    object-fit: cover;
+}
+
+
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+
+/* Review card ke andar stars aur text ke beech gap */
+
+.starability-result {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem !important;
+}
+
+
+.card-body {
+    padding-bottom: 0.8rem !important;
+}
+
+
+.review-card-delete-btn {
+    margin-top: 10px;
+}
+
+.card-body .starability-result {
+    transform: scale(0.9);
+
+    transform-origin: left;
+
+}
+
+.btns {
+    display: flex;
+}
+
+.show-img {
+    height: 30vh;
+
+    border-radius: 1.5rem !important;
+
+}
+
+/* map style */
+
+#map {
+    height: 400px !important;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.leaflet-container {
+    z-index: 1;
+    /* Taaki navbar ke peeche na chhup jaye */
+}
+
+#filters {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    opacity: 0.7;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.filter:hover {
+    opacity: 1;
+    border-bottom: 2px solid black;
+}
+
+.filter p {
+    font-size: 0.8rem;
+}
+
+.search-form {
+    border: 1px solid #ced4da;
+    border-radius: 50px;
+    padding: 0 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    width: 300px !important;
+}
+
+.btn-search {
+    background-color: #fe424d !important;
+    color: white !important;
+    height: 32px;
+    width: 32px;
+    padding: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+.btn-search:hover {
+    background-color: #d63031 !important;
+}
+
+.tax-toggle {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 1rem;
+    margin-left: 2rem;
+
+    margin-top: 0.5rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.tax-info {
+    display: none;
+
+    color: #fe424d;
+    font-weight: 600;
+}
